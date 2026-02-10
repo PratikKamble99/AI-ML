@@ -1,0 +1,27 @@
+1. conda activate - activated base environment
+2. conda list - list all available packages which are in conda
+3. conda env list - list all environments 
+4. conda create -n env_name
+    -n : You want one env for many projects
+    -p : You want one env per project
+5. conda env remove -n ENV_NAME / conda remove -n ENV_NAME --all
+6. IF conda: command not found - Add below in environment vars PATH 
+    C:\ProgramData\anaconda3
+    C:\ProgramData\anaconda3\Scripts
+
+    IF conda not found in VS code - Add below in settings.json
+        {
+            "terminal.integrated.env.windows": {
+                 "PATH": "C:\\ProgramData\\anaconda3;C:\\ProgramData\\anaconda3\\Scripts;${env:PATH}"
+            }
+        }
+7. conda init: to initialize conda in system
+8. source activate base - to activate env
+9. conda deactivate - to deactivate env
+
+10. conda install jupyter
+    jupyter notebook - to open jupyter notebook in browser
+    Whichever files you create in browser NB those get saved in local.
+
+11. conda install jupyterlab
+    jupyter lab - to open jupyter notebook in browser
